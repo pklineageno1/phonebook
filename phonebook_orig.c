@@ -9,8 +9,10 @@
 entry *findName(char lastname[], entry *pHead)
 {
     while (pHead != NULL) {
-        if (strcasecmp(lastname, pHead->lastName) == 0)
+        if (strcasecmp(lastname, pHead->lastName) == 0){
+			//printf("hahhaha\n");
             return pHead;
+        }
         pHead = pHead->pNext;
     }
     return NULL;
