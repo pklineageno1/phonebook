@@ -2,7 +2,7 @@
 #define _PHONEBOOK_H
 
 #define MAX_LAST_NAME_SIZE 16
-#define MAX_DICT 350000
+#define MAX_DICT 1543
 /* original version */
 
 typedef struct __PHONE_BOOK_ENTRY {
@@ -20,7 +20,7 @@ typedef struct __PHONE_BOOK_ENTRY {
 
 typedef struct __lastname_BOOK_ENTRY {
     char lastName[MAX_LAST_NAME_SIZE];
-    entry_data *entrydata; 
+    entry_data *entrydata;
     struct __lastname_BOOK_ENTRY *pNext;
 } entry;
 
